@@ -33,6 +33,7 @@
 	$(document).on('change', '#free', function () {
 		if ($(this).is(':checked')) {
 			$('#defaultDiscount').val(100).parent().addClass('hidden');
+			$(this).parents('.form-group').find('.error').addClass('hidden');
 		} else {
             $('#defaultDiscount').parent().removeClass('hidden');
 		}
@@ -45,5 +46,4 @@
 		$('#seletedTheme').val($(this).attr('theme'));
 		$(this).parents('.templatePanel').addClass('active');
     });
-
 })( jQuery );

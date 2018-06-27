@@ -440,6 +440,7 @@ select#multiselect option, #multiselect_to option{
 .m-t-0{
     margin-top: 0px !important;
 }
+.redText,
 .error{
     color: red;
 }
@@ -479,5 +480,46 @@ select#multiselect option, #multiselect_to option{
     border-color: red;
     opacity: .6;
 }
-#msform>fieldset{display: block !important;}
-#msform>fieldset:last-child{display: block;}
+.savedMessage{text-align: center; margin-bottom: 20px;}
+.redBorder{border-color: red !important;}
+.loaderWrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding-top: 28%;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.loaderWrapper.open{display: block;}
+.loader {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    margin-top: -120px;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*#msform fieldset{display: block !important;}*/
+/*#msform>fieldset{display: block !important;}*/
+/*#msform>fieldset:last-child{display: block;}*/

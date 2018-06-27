@@ -3,7 +3,7 @@
 	var left, opacity, scale; //fieldset properties which we will animate
 	var animating; //flag to prevent quick multi-click glitches
 
-	$(document).on('click', '.next', function() {
+	$(document).on('click', '.next2', function() {
 		if(animating) return false;
 		animating = true;
 		

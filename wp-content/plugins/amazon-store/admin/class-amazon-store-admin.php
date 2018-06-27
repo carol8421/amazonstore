@@ -127,7 +127,7 @@ class Amazon_Store_Admin {
 	 * @since    1.0.0
 	 */
 	public function as_setup() {
-		include plugin_dir_path( dirname( __FILE__ ) ).'admin/partials/amazon-store-admin-setup.php';
+		include plugin_dir_path( dirname( __FILE__ ) ).'admin/partials/setup.php';
 	}
 
 	/**
@@ -136,7 +136,7 @@ class Amazon_Store_Admin {
 	 * @since    1.0.0
 	 */
 	public function as_credential() {
-		echo 'as_credential';
+		include plugin_dir_path( dirname( __FILE__ ) ).'admin/partials/credential.php';
 	}
 
 	/**
@@ -145,7 +145,7 @@ class Amazon_Store_Admin {
 	 * @since    1.0.0
 	 */
 	public function as_preference() {
-		echo 'as_preference';
+		include plugin_dir_path( dirname( __FILE__ ) ).'admin/partials/preference.php';
 	}
 
 	/**
