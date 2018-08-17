@@ -154,6 +154,6 @@ class Amazon_Store_Admin {
 	 * @since    1.0.0
 	 */
 	public function as_settings() {
-		echo 'as_settings';
+		include plugin_dir_path( dirname( __FILE__ ) ).'admin/partials/settings.php';
 	}
 }

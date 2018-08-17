@@ -1,0 +1,433 @@
+
+#flag {
+    display: block;
+}
+
+/******* Header Text ******/
+/*For visible*/
+#promo-area h1 {display: block;}
+
+/*For hidden*/
+/* #promo-area h1 {display: hidden;} */
+
+#promo-area h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 125px;
+    color: #ffffff;
+}
+/*For Bold*/
+/* #promo-area h1 {font-weight: 700; } */
+
+/*For reguler*/
+#promo-area h1 {font-weight: 500; }
+
+/******* Search bar ********/
+#searchbar .form-control{
+    height: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/****** Footer Text *******/
+#footer-text{
+    background-color: #000000;
+    padding: 10px 0 10px 0;
+    margin-top: 0px;
+    opacity: 0.9;
+    height: 36px;
+    display: table;
+    width: 100%;
+}
+#footer-text p{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 11px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+/******** Landing page align ********/
+/*For Left View*/
+#landingpage_content{
+    margin: 0 auto;
+    display: block;
+    float: left;
+}
+/*For center View*/
+/* #landingpage_content{
+    margin: 0 auto;
+    display: block;
+    float: none;
+} */
+/*For Right View*/
+/* #landingpage_content{
+    margin: 0 auto;
+    display: block;
+    float: right;
+} */
+
+/*For landing page body height*/
+/* #promo-area{
+    height: 630px;
+    width: 1350px;
+} */
+
+
+/******* Subheader Text ********/
+/*For visible*/
+#promo-area h2 {display: block;}
+
+/*For hidden*/
+/* #promo-area h2 {display: hidden;} */
+
+#promo-area h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 0;
+}
+/*For Bold*/
+/* #promo-area h2 {font-weight: 700; }  */
+
+/*For reguler*/
+#promo-area h2 {font-weight: 300; }
+
+/*********Landing page button********/
+#searchbar #searchForm {
+    margin-left: 0px;
+    border-color: #446084;
+    background-color: #446084;
+    color: #fff;
+    opacity: 0.9;
+}
+#searchbar #searchForm:hover{
+    background-color: #446084;
+}
+
+/***********  Background  ***********/
+
+/*background color*/
+/* #promo-area {background-color: lightgreen;} */
+
+/*background video*/
+/*regular video*/
+.video-background {
+    background-color: #000; 
+}
+/*video with pattern bg*/
+#video_pattern_bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    display: block;
+    opacity: 1;
+}
+/*video with pattern regular/hide */
+#video_pattern_bg {display: none;}
+
+.video-background {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+    opacity: 1;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+/*background video hide*/
+.video-background{
+    display: none;
+}
+#promo-area {
+    opacity: 1;
+}
+
+/*******Space of search bar********/
+#searchbar .form-control{
+    border: 1px solid #446084;
+    background-color: #fff;
+    opacity: 1;
+}
+/*search placeholder text color*/
+#searchKeywords::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a8a8a8;
+}
+#searchKeywords::-moz-placeholder { /* Firefox 19+ */
+  color: #a8a8a8;
+}
+#searchKeywords:-ms-input-placeholder { /* IE 10+ */
+  color: #a8a8a8;
+}
+#searchKeywords:-moz-placeholder { /* Firefox 18- */
+  color: #a8a8a8;
+}
+
+/***** Center Logo ****/
+img.logo {
+    padding-top: 0;
+}
+
+/****** Discount bar *****/
+#slider{
+    
+}
+/*Discountbar line fill color*/
+#slider .ui-widget-header {
+    background: #446084;
+}
+/*Discount bar line Background color*/
+#slider.ui-widget-content{
+    background: #f1f1f1;
+}
+/*Discount Bar handle color (ball)*/
+#slider #custom-handle{
+    background-color: #446084;
+}
+/*Discount Bar scale color*/
+.slider-range {
+    color: #fff;
+}
+/*Discount text color*/
+#discount-rate {
+    color: #fff;
+    font-size: 17px;
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px  1px 1px  1px;
+    border-color: #444444;
+}
+
+/*discountbar hide*/
+/* #slider{display: none;} */
+
+
+/************ Single Page *************/
+.common_page_logo {
+    height: 25px;
+    width: auto;
+    margin-top: 17px;
+}
+.common_page_top_wrapper {
+    width: 80%;
+    text-align: center;
+    float: right;
+}
+.allItemProperties{
+    overflow: hidden;
+}
+
+/*Topbar color */
+.navbar-secondery{
+    background-color: #ffffff;
+}
+/*Header Text Color */
+#header_top_nav_bar{
+    color: #fff;
+}
+/*Links Color*/
+#header_top_nav_bar a{
+    color: #446084;
+}
+.header-menu{
+    color: #fff;
+}
+/*Topbar color */
+.navbar-secondery{
+    opacity: 1;
+}
+/*header menu hidden*/
+/* .header-menu{
+    display: none;
+} */
+
+/************ Top Searchbar************/
+.details_top_searchbar{
+    display: block;
+}
+
+/*disabled top searchbar*/
+/* .details_top_searchbar{
+    display: none;
+} */
+
+/*disabled top discount*/
+/* #searchbar_top_discount{
+    display: none;
+} */
+
+/*Border color + background color + opacity*/
+.details_top_searchbar .form-control,.details_top_searchbar .input-group-addon, .details_top_searchbar .btn, .details_top_searchbar .form-control:focus, .details_top_searchbar .btn:focus, .details_top_searchbar .btn:active{
+    background-color: #ffffff47;
+    opacity: 0.7;
+    color: #000;
+    border-color: #446084;
+    border-style: solid;
+    border-width: 2px;
+    outline: 0;
+}
+/* Hide search icon */
+/* .details_top_searchbar .glyphicon-search{
+    display: none;
+} */
+
+/********** Logo **********/
+.logo_text{
+    font-size: 15px;
+    line-height: 50px;
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+/*bold logo text*/
+/* .logo_text{
+    font-weight: 700;
+} */
+
+/******* Cart Buttons *******/
+/*Small Cart Button Color*/
+.product_add>input{
+    background-color: #a3a1a9;
+    color: #fff;
+}
+
+/* Add To Cart Button Background */
+#add_to_cart_btn>span{
+    background: #f1d71a;
+}
+/* Add To Cart Button Background 2 & color*/
+#add_to_cart_btn{
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+/* Buy it now Button Background */
+#buy_now_btn>span{
+    background: #f1d71a;
+}
+/* Buy it now Button Background 2 & color*/
+#buy_now_btn{
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+/********** Background Image ***********/
+#product-details-wrapper::before{
+    background-image: url(http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-037.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+/*background no repeat*/
+#product-details-wrapper::before{
+     background-repeat: repeat-y !important;
+}
+
+/**********Box and sidebar**********/
+/*Boxes Color and opacity*/
+.product-item:before{
+    background: #ffffff;
+    opacity: .5;
+}
+/*Box Text Color*/
+.product-item{
+    color: #333;
+}
+/*Box url Color*/
+.product-item a{
+    color: #333;
+}
+/*bar of border*/
+.author_logo {
+    background-color: #446084;
+}
+/*Background Text Color*/
+.author_logo a{
+    color: #333;
+}
+/*Logo size*/
+/*small size*/
+/* .author_logo img {
+    height: 15px;
+} */
+/*medium size*/
+/* .author_logo img {
+    height: 20px;
+} */
+/*large size*/
+.author_logo img {
+    height: 25px;
+}
+
+/*Slide discountbar*/
+/****** Discount bar *****/
+#slider{
+    
+}
+/*Discountbar line fill color*/
+#sidebar-slider .ui-widget-header {
+    background: #446084;
+}
+/*Discount bar line Background color*/
+#sidebar-slider.ui-widget-content{
+    background: #f1f1f1;
+}
+/*Discount Bar handle color (ball)*/
+#sidebar-slider #custom-handle{
+    background-color: #446084;
+}
+/*Discount Bar scale color*/
+#sidebar-slider .slider-range {
+    color: #fff;
+}
+/*Discounrbar text color*/
+#sidebarSearchKeywords{
+    color: #000;
+}
+/*Discount text color*/
+#sidebar-discount-rate {
+    color: #fff;
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 17px;
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px  1px 1px  1px;
+    border-color: #444444;
+}
+/*discountbar hide*/
+/* #slider{display: none;} */
+
+/*Side bar*/
+/*header color */
+.sidebar-categories>h4{
+    color: #9a9a9a;
+}
+/*Search background color*/
+#sidebarSearchKeywords, #sidebarSearchForm{
+    background-color: #fff;
+}
+/*Search text color*/
+#sidebarSearchKeywords{
+    color: #333;
+    opacity: 0.9;
+}
+/*border color*/
+#sidebarSearchKeywords, #sidebarSearchForm{
+    border-color: #585858;
+}
+#sidebarSearchKeywords:focus, #sidebarSearchForm:focus{ 
+    border-color: #585858;
+}
+/*search magnify icon hide*/
+/* #sidebarSearchForm i{
+    visibility: hidden;
+} */

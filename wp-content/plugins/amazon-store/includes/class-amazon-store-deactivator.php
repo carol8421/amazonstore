@@ -30,9 +30,20 @@ class Amazon_Store_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
-
 		// Delete plugin data
 		Helper::resetPluginOptions();
+
+		// Delete pages
+		self::removePages(AS_AMAZON_PAGES);
 	}
 
+	function removePages($pages) {
+		$pages = json_decode($pages);
+		foreach ($pages as $page) {
+			$the_slug = str_replace(' ', '-', strtolower($page));
+			$args = ['name'=> $the_slug, 'post_type'   => 'page', 'numberposts' => 1 ];
+			$the_page = get_posts($args);
+			if( $the_page ) { wp_delete_post($the_page[0]->ID, true); }
+		}
+	}
 }

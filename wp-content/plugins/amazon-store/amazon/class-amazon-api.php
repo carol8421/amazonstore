@@ -105,7 +105,7 @@ class Amazon {
 		);
 
 		$params = array_merge($defaults, $params);
-		echo '<pre>'. print_r($params, true) .'</pre>'; exit();
+		//echo '<pre>'. print_r($params, true) .'</pre>';
 		$params['Signature'] = $this->sign($requestURI, $params);
 
 		$url = $requestURI . $this->http_build_query_rfc3986($params);

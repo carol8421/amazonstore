@@ -44,6 +44,8 @@
 		event.preventDefault();
         $('.templatePanel').removeClass('active');
 		$('#seletedTheme').val($(this).attr('theme'));
-		$(this).parents('.templatePanel').addClass('active');
+        $(this).parents('.templatePanel').addClass('active');
+        $('.load-temp-btn').html('Load Template');
+        $(this).find('.load-temp-btn').html('Selected');
     });
 })( jQuery );

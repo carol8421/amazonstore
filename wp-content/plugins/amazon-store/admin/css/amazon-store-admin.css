@@ -314,6 +314,8 @@ clear: both;
 }
 .template-list-item:hover, .template-list-item:active, .template-list-item:focus{
     text-decoration: none;
+    outline: none;
+    box-shadow: none;
 }
 .load-temp-btn {
     padding: 5px 12px;
@@ -480,6 +482,8 @@ select#multiselect option, #multiselect_to option{
     border-color: red;
     opacity: .6;
 }
+.templatePanel.active,
+.templatePanel.active a{ cursor: not-allowed;}
 .savedMessage{text-align: center; margin-bottom: 20px;}
 .redBorder{border-color: red !important;}
 .loaderWrapper {
@@ -523,3 +527,25 @@ select#multiselect option, #multiselect_to option{
 /*#msform fieldset{display: block !important;}*/
 /*#msform>fieldset{display: block !important;}*/
 /*#msform>fieldset:last-child{display: block;}*/
+
+.imageContainer{
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+.removeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+.imageContainer:hover .removeBtn{
+    visibility: visible;
+}

@@ -5,14 +5,42 @@
 class AmazonSearch extends Amazon {
 	public $parsed_xml;
 
-	function __construct($accessKey,$serectKey,$associateTag) {
-		parent::__construct($accessKey,$serectKey,$associateTag);
+	function __construct($ACCESS_KEY,$SECRET_KEY,$ASSOCIATED_TAG) {
+		parent::__construct($ACCESS_KEY,$SECRET_KEY,$ASSOCIATED_TAG);
+		$this->setArgsFromSession();
 	}
+	public function setArgsFromSession() {
+		if (!session_id()) @session_start();
 
+		if ($_SESSION['bbil_MinPercentageOff']) {
+			$this->MinPercentageOff = $_SESSION['bbil_MinPercentageOff'];
+			unset($_SESSION['bbil_MinPercentageOff']);
+		} else { $this->MinPercentageOff = AS_OFFER; }
+
+		if ($_SESSION['bbil_Keywords']) {
+			if ((int) $_SESSION['bbil_Keywords']) $this->args['BrowseNode'] = $_SESSION['bbil_Keywords'];
+			else $this->args['Keywords'] = $_SESSION['bbil_Keywords'];
+			unset($_SESSION['bbil_Keywords']);
+		} else { $this->args['Keywords'] = AS_KEYWORD; }
+
+		if ($_SESSION['bbil_SearchIndex']) {
+			$this->args['SearchIndex'] = $_SESSION['bbil_SearchIndex'];
+			unset($_SESSION['bbil_SearchIndex']);
+		} else {
+			if (AS_CATEGORY == 'All') { $lastKey = 'All'; }
+			else if (AS_CATEGORY) {
+				$lastKey = [];
+				$lastKey = stripcslashes(AS_CATEGORY);
+				$lastKey = json_decode($lastKey, true);
+				end($lastKey);
+				$lastKey = str_replace(' ', '', key($lastKey));
+			} else { $lastKey = 'All'; }
+			$this->args['SearchIndex'] = $lastKey;
+		}
+	}
 	public function get_search_form($value='') {
 		include 'search-form.php';
 	}
-
 	public function getProductsAttributes() {
 	    $items = [];
 	    $counter = 0;
@@ -38,7 +66,6 @@ class AmazonSearch extends Amazon {
 	    }
 	    return false;
 	}
-
 	/**
 	 * Get attributes of single product
 	 *
@@ -62,11 +89,11 @@ class AmazonSearch extends Amazon {
 	    $data['items'] = $items;
 	    return $data;
 	}
+
 	// Render data
 	public function getProductHtml($products='') {
 		$html= '';
 	    if ($products) {
-	    	// echo "<pre>". print_r($products, true) ."</pre>"; exit();
 	        foreach ($products as $product) {
 	            $html .= '<div id="'. $product['ASIN'] .'" class="grid-item">
 			            <div class="product-item">
@@ -111,19 +138,14 @@ class AmazonSearch extends Amazon {
 	        }
 	    }
 	    return $html;
-	    // echo "<pre>". print_r($products, true) ."</pre>";
 	}
-
 	public function getProducts($args, $is_single=false) {
 		$results = $this->requestAPI($args);
 		$this->parsed_xml = json_decode(json_encode((array) simplexml_load_string($results)), 1);
 		if ( $is_single ) { return $this->parsed_xml; }
 		else { $attributes = $this->getProductsAttributes(); }
-		// echo "<pre>". print_r($this->parsed_xml, true) ."</pre>";
 		return $this->getProductHtml($attributes['items']);
-		// echo "<pre>". print_r($attributes['product'], true) ."</pre><hr>";
 	}
-
 	public function render() {
 		$html= '';
 		$productItems =  $this->getProducts($this->args);
@@ -137,7 +159,6 @@ class AmazonSearch extends Amazon {
 
 		echo $html;
 	}
-
 	public function loadMoreProducts($args) {
 		$this->args = $args;
 		return $this->getProducts($this->args);
@@ -173,12 +194,10 @@ class AmazonSearch extends Amazon {
 
 		return $html;
 	}
-
 	public function get_total_pages() {
 	    if ($this->parsed_xml) return $this->parsed_xml['Items']['TotalPages'];
 	    return false;
 	}
-
 	public function get_current_page() {
 	    if ($this->parsed_xml) {
 	        $currentPageNumber = @$this->parsed_xml['Items']['Request']['ItemSearchRequest']['ItemPage'];
@@ -186,12 +205,10 @@ class AmazonSearch extends Amazon {
 	    }
 	    return false;
 	}
-
 	public function is_valid_request() {
 	    if ($this->parsed_xml) return $this->parsed_xml['Items']['Request']['IsValid'];
 	    return false;
 	}
-
 	public function getCategories() {
 		$args = ['SearchIndex' => 'Book', 'Title' => 'superman'];
 		$results = $this->requestAPI($args);

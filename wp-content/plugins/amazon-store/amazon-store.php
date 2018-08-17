@@ -38,6 +38,12 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'PLUGIN_NAME_VERSION', '1.0.0' );
 
 /**
+ * The core plugin class that is used to define all helper methods,
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-amazon-store-helper.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-amazon-store-themeHelper.php';
+
+/**
  * The code that runs for some static configuration stuff
  * This action is documented in configurations.php
  */
@@ -69,11 +75,6 @@ register_deactivation_hook( __FILE__, 'deactivate_amazon_store' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-amazon-store.php';
-
-/**
- * The core plugin class that is used to define all helper methods,
- */
-require plugin_dir_path( __FILE__ ) . 'includes/class-amazon-store-helper.php';
 
 /**
  * The core plugin class that is used to define all ajax methods,

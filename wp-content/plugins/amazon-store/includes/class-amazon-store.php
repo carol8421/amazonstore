@@ -121,9 +121,13 @@ class Amazon_Store {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-amazon-store-public.php';
-
 		$this->loader = new Amazon_Store_Loader();
 
+		/**
+		 * The class responsible for adding required page templates
+		 * Custome template file.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-amazon-store-template.php';
 	}
 
 	/**

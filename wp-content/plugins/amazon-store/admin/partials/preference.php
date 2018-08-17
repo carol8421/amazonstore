@@ -153,7 +153,6 @@
 
             // Validation 
             formError = formValidation(storeKeyword, defaultDiscount, category);
-            console.log(formError);
             // validation
             if ($.isEmptyObject(formError)) {
                 // submit via ajax
