@@ -29,11 +29,8 @@ class AmazonSearch extends Amazon {
 		} else {
 			if (AS_CATEGORY == 'All') { $lastKey = 'All'; }
 			else if (AS_CATEGORY) {
-				$lastKey = [];
-				$lastKey = stripcslashes(AS_CATEGORY);
-				$lastKey = json_decode($lastKey, true);
-				end($lastKey);
-				$lastKey = str_replace(' ', '', key($lastKey));
+				$cat = explode(':', stripcslashes(AS_CATEGORY));
+				$lastKey = str_replace('"', '', $cat[0]);
 			} else { $lastKey = 'All'; }
 			$this->args['SearchIndex'] = $lastKey;
 		}
@@ -91,7 +88,7 @@ class AmazonSearch extends Amazon {
 	}
 
 	// Render data
-	public function getProductHtml($products='') {
+	public function getProductHtmlOld($products='') {
 		$html= '';
 	    if ($products) {
 	        foreach ($products as $product) {
@@ -139,6 +136,40 @@ class AmazonSearch extends Amazon {
 	    }
 	    return $html;
 	}
+	public function getProductHtml($products='') {
+		$html= '';
+		if ($products) {
+			foreach ($products as $product) {
+				if (AS_SINGLE == 'popup') $detailsOpenStyle = 'href="javascript:;" data-toggle="modal" data-target="#detailsModal"';
+				else $detailsOpenStyle = 'target="_blank" href="'. site_url('/single-product/?id='.$product['ASIN']) .'"';
+
+				$item = $this->addToCartItemData($product);
+				$html .= '<div id="'. $product['ASIN'] .'" class="col-lg-3 col-sm-6 col-xs-12">';
+	                $html .= '<div class="product-item">';
+	                    $html .= '<div class="product-img">';
+							$html .= '<a '. $detailsOpenStyle .'> <div class="item-hover"><i class="fa fa-eye" aria-hidden="true"></i></div></a>';
+	                        $html .= '<img class="img-responsive" src="'. $product['Image'] .'">';
+	                    $html .= '</div>';
+
+	                    $html .= '<div class="product-info">';
+							$html .= '<div class="product-description"> <a '. $detailsOpenStyle .'>'. $product['Title'] .'</a></div>';
+							$html .= '<div class="product-price"><p><span class="line-through">'. $product['OldPrice'] .'</span><span class="actual-rate">'. $product['NewPrice'] .'</span></p></div>';
+
+	                        $html .= '<div class="rateYo"></div>';
+
+	                        $html .= '<div class="cart-btn-list"><button class="btn btn-dark btn-cart addToCart" item="'. $item .'"><img src="'. AS_THEME_DIR .'/images/icons/shopping-cart-empty-side-view.png"></button></div>';
+	                    $html .= '</div>';
+	                $html .= '</div>';
+	            $html .= '</div>';
+	        }
+	    }
+	    return $html;
+	}
+	public function addToCartItemData($product) {
+		$shareTitle = str_replace ( "\"", "&quot;", $product['Title']);
+		$shareImage = str_replace ( "\"", "&quot;", $product['Image']);
+		return $product['ASIN'].'_#_'.$shareTitle.'_#_'.$shareImage.'_#_'.ltrim($product['NewPrice'], '$');
+	}
 	public function getProducts($args, $is_single=false) {
 		$results = $this->requestAPI($args);
 		$this->parsed_xml = json_decode(json_encode((array) simplexml_load_string($results)), 1);
@@ -151,7 +182,7 @@ class AmazonSearch extends Amazon {
 		$productItems =  $this->getProducts($this->args);
 
 	    if ($productItems) {
-		    $html .= '<div id="productWrapper" class="grid" data_SearchIndex="All" data_MinPercentageOff="'. $this->MinPercentageOff .'" data_Keywords="'. $this->args['Keywords'] .'" data_maxPages="'. $this->get_total_pages() .'" data_ItemPage="2">';
+		    $html .= '<div id="productWrapper" class="row" data_SearchIndex="All" data_MinPercentageOff="'. $this->MinPercentageOff .'" data_Keywords="'. $this->args['Keywords'] .'" data_maxPages="'. $this->get_total_pages() .'" data_ItemPage="2">';
 		        $html .= $productItems;
 		    $html .= '</div>';
 		    $html .= $this->getLoader();

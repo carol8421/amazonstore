@@ -114,7 +114,7 @@ class Amazon_Store_Admin {
 			add_menu_page('Amazon Store', 'Amazon Store', 'manage_options', 'bbil_amazon_store', function (){ $this->as_credential(); } ,'',10);
 			add_submenu_page('bbil_amazon_store', 'amazon credential', 'amazon credential', 'manage_options', 'bbil_amazon_store' );
 			add_submenu_page('bbil_amazon_store', 'Amazon preference', 'Amazon preference', 'manage_options', 'bbil_amazone_preference', function (){ $this->as_preference(); } );
-			add_submenu_page('bbil_amazon_store', 'Settings', 'Settings', 'manage_options', 'bbil_amazon_settings ', function (){ $this->as_settings(); } );
+			add_submenu_page('bbil_amazon_store', 'Settings', 'Settings', 'manage_options', 'bbil_amazon_settings', function (){ $this->as_settings(); } );
 		} else {
 			add_menu_page('Amazon Store', 'Amazon Store', 'manage_options', 'bbil_amazon_store', function (){ $this->as_setup(); } ,'',10);
 			add_submenu_page('bbil_amazon_store', 'Amazon Setting', 'Amazon Setting', 'manage_options', 'bbil_amazon_store' );

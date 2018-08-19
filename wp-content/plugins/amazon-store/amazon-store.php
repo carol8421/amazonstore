@@ -92,6 +92,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-amazon-ajax.php';
 require plugin_dir_path( __FILE__ ) . 'amazon/class-amazon-api.php';
 require plugin_dir_path( __FILE__ ) . 'amazon/class-amazon-api-search.php';
 require plugin_dir_path( __FILE__ ) . 'amazon/class-amazon-api-categories.php';
+require plugin_dir_path( __FILE__ ) . 'amazon/class-amazon-api-cart.php';
 
 /**
  * Begins execution of the plugin.

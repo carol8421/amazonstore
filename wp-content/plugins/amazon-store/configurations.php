@@ -20,6 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // static variables declaration
+define('AS_OPTION_PREFIX', 'bbilas_');
 define('AS_ROOT_DIR_NAME', basename(__DIR__)); // plugin's directory name
 define('AS_ROOT_URL', plugins_url(AS_ROOT_DIR_NAME).'/');
 define('AS_SETTINGS_SAVED', get_option('bbilas_settingsSaved'));
@@ -32,7 +33,7 @@ define('AS_ASSOCIATE', get_option('bbilas_associate'));
 // amazon search properties
 define('AS_CATEGORY', get_option('bbilas_category', '{"All":All}'));
 define('AS_KEYWORD', get_option('bbilas_storeKeyword', 'dog'));
-define('AS_OFFER', get_option('bbilas_defaultDiscount', '20'));
+define('AS_OFFER', get_option('bbilas_defaultDiscount', '10'));
 
 // Theme information
 define('AS_THEME_NAME', get_option('bbilas_currentThemeName', 'default'));
@@ -44,5 +45,6 @@ define('AS_UPLOAD_DIR', TH::getRlativeUrl(AS_TEMPLATE_DIR));
 
 // pages
 define( 'AS_AMAZON_PAGES', json_encode(['Search Products', 'Single Product']) );
+define( 'AS_SINGLE', get_option(AS_OPTION_PREFIX .'detailsOpenStyle', 'popup') ); // popup, newtab
 
-//echo '<br><br><br><br><br> AS_ROOT_URL AS_ROOT_URL AS_ROOT_URL AS_ROOT_URL : '. AS_ROOT_URL;
+//echo '<br><br><br><br><br> AS_ROOT_URL AS_ROOT_URL AS_ROOT_URL AS_ROOT_URL : '. AS_SINGLE;

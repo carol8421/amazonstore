@@ -41,22 +41,7 @@
                                             </div>
                                             <span class="error hidden">This field is required.</span>
                                         </div>
-                                        <?php $rootCats = Helper::rootCategories();
-                                        if ($rootCats) {
-                                            echo '<div class="categoriesPanel" categoriespaneldata="'. get_option("bbilas_category") .'">';
-                                                echo '<div class="form-group">';
-                                                    echo '<label>Choose Categories<span class="redText"> *</span></label>';
-                                                    echo '<select class="form-control category">';
-                                                    foreach ($rootCats as $catName => $catID) {
-                                                        $value = '"'. $catName .'":'.$catID;
-                                                        echo '<option value=\''. $value .'\'>'. $catName .'</option>';
-                                                    }
-                                                    echo '</select>';
-                                                    echo '<span class="error hidden">This field is required.</span>';
-                                                echo '</div>';
-                                            echo '</div>';
-                                            echo '<div class="categoriesError text-danger"></div>';
-                                        } ?>
+                                        <?php Helper::printRootCategoriesHtml(); ?>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +123,7 @@
         $(document).on('change', 'form input, form textarea, form checkbox', function (event) {
             var storeKeyword    = $('#storeKeyword').val().trim();
             var defaultDiscount = $('#defaultDiscount').val().trim();
-            var category        = $('.categoriesPanel').attr('categoriespaneldata');
+            var category        = $('#category').val().trim();
 
             formValidation(storeKeyword, defaultDiscount, category);
         });
@@ -149,7 +134,7 @@
             // access all values
             var storeKeyword    = $('#storeKeyword').val().trim();
             var defaultDiscount = $('#defaultDiscount').val().trim();
-            var category        = $('.categoriesPanel').attr('categoriespaneldata');
+            var category        = $('#category').val().trim();
 
             // Validation 
             formError = formValidation(storeKeyword, defaultDiscount, category);
@@ -163,7 +148,6 @@
                     defaultDiscount: defaultDiscount,
                     category: category
                 };
-
                 // store data via ajax
                 storeDataViaAjax(ajaxPost, button);
             }

@@ -40,7 +40,7 @@ if (get_option('bbil_enableOnePageLandingPage') || get_option('bbil_enableLandin
 }
 
 if (get_option('bbil_enableOnePageLandingPage')) {
-	$AMAZON_PRODUCT = new amazon_search(AS_ACCESS_KEY, AS_SECRET_KEY, AS_ASSOCIATE);
+	$AMAZON_PRODUCT = new AmazonSearch(AS_ACCESS_KEY, AS_SECRET_KEY, AS_ASSOCIATE);
 	echo '<section id="product-list">';
 	echo '<div class="container">';
 	echo '<div class="row">';

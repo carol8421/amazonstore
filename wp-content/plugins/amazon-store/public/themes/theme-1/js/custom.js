@@ -1,4 +1,4 @@
-$( function() {
+jQuery( function($) {
     var handle = $( "#custom-handle" );
     var change_text = $( "#discount-rate>span" );
     var sidebar_change_text = $( "#sidebar-discount-rate>span" );
@@ -84,10 +84,10 @@ $( function() {
     });
 });
 
-$('.dropdown-toggle').dropdown();
+jQuery('.dropdown-toggle').dropdown();
 
 // Bootstrap nav hover dropdown
-$('.dropdown').hover(
+jQuery('.dropdown').hover(
     function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
     },
@@ -96,7 +96,7 @@ $('.dropdown').hover(
     }
 );
 
-$('.dropdown-menu').hover(
+jQuery('.dropdown-menu').hover(
     function() {
         $(this).stop(true, true);
     },
@@ -105,7 +105,7 @@ $('.dropdown-menu').hover(
     }
 );
 
-$(".rateYo").rateYo({
+jQuery(".rateYo").rateYo({
     rating: 3.6,
     readOnly: true,
     starWidth: "15px"

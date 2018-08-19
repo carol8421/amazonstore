@@ -1,5 +1,11 @@
 <?php
 class Helper {
+	static function pre($array, $print=true, $exit=false){
+		$array = '<pre>'. print_r($array,true) .'</pre>';
+		if ($print) echo $array;
+		else return $array;
+		if ($exit) exit();
+	}
 
 	/**
 	 * Save data to option table
@@ -11,7 +17,7 @@ class Helper {
 	 * @param $optionName
 	 * @param $value
 	 */
-	public static function saveOnOptionTable($optionName, $value) {
+	static function saveOnOptionTable($optionName, $value) {
 		if( !empty(trim(get_option($optionName))) ) update_option( $optionName, $value,'no' );
 		else add_option( $optionName, $value, '', 'no' );
 	}
@@ -26,7 +32,7 @@ class Helper {
 	 *
 	 * @return bool|string
 	 */
-	public static function getPostField($value, $default='') {
+	static function getPostField($value, $default='') {
 		return isset($value) && !empty(trim($value)) ? trim($value) : $default;
 	}
 
@@ -39,7 +45,7 @@ class Helper {
 	 *
 	 * @return  string
 	 */
-	public static function redirectUri(){
+	static function redirectUri(){
 		$myUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && !in_array(strtolower($_SERVER['HTTPS']),array('off','no'))) ? 'https' : 'http';
 		$myUrl .= '://'.$_SERVER['HTTP_HOST'];
 		$myUrl .= $_SERVER['REQUEST_URI'];
@@ -57,7 +63,7 @@ class Helper {
 	 *
 	 * @return string
 	 */
-	public static function pluginLibUrl($fileUrl='analytics/HelloAnalytics.php'){
+	static function pluginLibUrl($fileUrl='analytics/HelloAnalytics.php'){
 		return str_replace('admin/partials/', '', plugins_url('/', __FILE__ )).$fileUrl;
 	}
 
@@ -68,7 +74,7 @@ class Helper {
 	 *
 	 * @since    1.0.0
 	 */
-	public static function setDefatltPreferences() {
+	static function setDefatltPreferences() {
 		// Set Default options
 	}
 
@@ -79,7 +85,7 @@ class Helper {
 	 *
 	 * @since    1.0.0
 	 */
-	public static function resetPluginOptions() {
+	static function resetPluginOptions() {
 		delete_option('bbilas_accessKey');
 		delete_option('bbilas_secretKey');
 		delete_option('bbilas_associate');
@@ -90,7 +96,7 @@ class Helper {
 		delete_option('bbilas_settingsSaved');
 	}
 
-	public static function rootCategories() {
+	static function rootCategories() {
 		return [
 			'All' => 'All',
 			'Appliances' => 2619526011,
@@ -136,5 +142,44 @@ class Helper {
 			'Wine' => 2983386011,
 			'Wireless' => 2335753011
 		];
+	}
+	static function printRootCategoriesHtml($print=true){
+		$html = '';
+		$savedCat = stripcslashes(get_option("bbilas_category"));
+		$rootCats = self::rootCategories();
+		if ($rootCats) {
+			$html .= '<div class="form-group">';
+			$html .= '<label>Choose Categories<span class="redText"> *</span></label>';
+			$html .= '<select id="category" class="form-control category">';
+			foreach ($rootCats as $catName => $catID) {
+				$value = '"'. $catName .'":'.$catID;
+				if ($savedCat == $value) $selectedOption = ' selected';
+				else $selectedOption = '';
+				$html .= '<option '. $selectedOption .' value=\''. $value .'\'>'. $catName .'</option>';
+			}
+			$html .= '</select>';
+			$html .= '<span class="error hidden">This field is required.</span>';
+			$html .= '</div>';
+		}
+		if ($print) echo $html;
+		else return $html;
+	}
+	static function printRootCategoriesHtmlForSearch($print=true){
+		$html = '';
+		$savedCat = '';
+		$rootCats = self::rootCategories();
+		if ($rootCats) {
+			$html .= '<select id="category" class="form-control plugin-form-control">';
+			foreach ($rootCats as $catName => $catID) {
+				//$value = '"'. $catName .'":'.$catID;
+				$value = $catName;
+				if ($savedCat == $value) $selectedOption = ' selected';
+				else $selectedOption = '';
+				$html .= '<option '. $selectedOption .' value=\''. $value .'\'>'. $catName .'</option>';
+			}
+			$html .= '</select>';
+		}
+		if ($print) echo $html;
+		else return $html;
 	}
 }

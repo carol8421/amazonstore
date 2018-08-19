@@ -11,125 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/partials/settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-              <folding>
-                <element signature="e#330#1646#0#PHP" />
-                <element signature="e#4432#4585#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-amazon-ajax.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/class-amazon-ajax.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="82" column="88" selection-start-line="82" selection-start-column="88" selection-end-line="82" selection-end-column="88" />
-              <folding>
-                <element signature="n#__construct#0;n#amazonAjax#0;n#!!top" />
-                <element signature="e#841#899#0#PHP" />
-                <element signature="e#2309#2362#0#PHP" />
-                <element signature="n#bbilas_loadSubCategories#0;n#amazonAjax#0;n#!!top" />
-                <element signature="n#bbilas_loadMoreProducts#0;n#amazonAjax#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="amazon-store-admin.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/css/amazon-store-admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="549" column="24" selection-start-line="549" selection-start-column="24" selection-end-line="549" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_products.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/default/search_products.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_products.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/theme-1/search_products.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="482" column="29" lean-forward="true" selection-start-line="482" selection-start-column="29" selection-end-line="482" selection-end-column="29" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/default/includes/header.php">
+      <file leaf-file-name="single_product.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/themes/theme-1/single_product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-amazon-api-search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api-search.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
-              <folding>
-                <element signature="e#7#29#0#PHP" />
-                <element signature="n#__construct#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="n#setArgs#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#294#495#0#PHP" />
-                <element signature="e#499#780#0#PHP" />
-                <element signature="e#784#1268#0#PHP" />
-                <element signature="e#929#1268#0#PHP" />
-                <element signature="e#939#1222#0#PHP" />
-                <element signature="e#995#1222#0#PHP" />
-                <element signature="n#get_search_form#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="n#getProductsAttributes#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#377#1628#0#PHP" />
-                <element signature="e#425#1506#0#PHP" />
-                <element signature="e#1653#1720#0#PHP" />
-                <element signature="n#getProductArray#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="n#getProductHtml#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#2655#5289#0#PHP" />
-                <element signature="e#2748#5282#0#PHP" />
-                <element signature="n#getProducts#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#5560#5664#0#PHP" />
-                <element signature="n#render#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#5957#6320#0#PHP" />
-                <element signature="n#loadMoreProducts#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#6453#7110#0#PHP" />
-                <element signature="n#get_single_product#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#7190#7302#0#PHP" />
-                <element signature="n#getLoader#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="n#get_total_pages#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="n#get_current_page#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#7827#8022#0#PHP" />
-                <element signature="n#is_valid_request#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="n#getCategories#0;n#AmazonSearch#0;n#!!top" />
-                <element signature="e#8511#8529#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-amazon-api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -137,8 +23,44 @@
       <file leaf-file-name="configurations.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configurations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="476">
+              <caret line="47" column="76" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="social.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/social.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_products.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/theme-1/search_products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -147,31 +69,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>as_settings</find>
-      <find>storeDataViaAjax</find>
-      <find>seletedTheme</find>
-      <find>$activatedTemplate</find>
-      <find>.templatePanel</find>
-      <find>template-list-item</find>
-      <find>load</find>
-      <find>bbilas_setup</find>
-      <find>.loaderWrapper</find>
-      <find>public</find>
-      <find>load_dependencies</find>
-      <find>BBIL_PLUGIN_DIR</find>
-      <find>generate_custom_title</find>
-      <find>discountValue</find>
-      <find>AS_OFFER</find>
-      <find>AS_offer</find>
-      <find>&quot;#slider, #sidebar-slider&quot;</find>
-      <find>\$\( \&quot;\#slider\, \#sidebar\-slider\&quot; \)\.slider\(\{\n        \/\/     \/\/value\: 60\,\n        \/\/     orientation\: \&quot;horizontal\&quot;\,\n        \/\/     range\: \&quot;min\&quot;\,\n        \/\/     value\: discountValue\,\n        \/\/     animate\: true\,\n        \/\/     create\: function\(\) \{\n        \/\/         change_text\.text\( \$\( this \)\.slider\( \&quot;value\&quot; \) \)\;\n        \/\/     \}\,\n        \/\/     slide\: function\( event\, ui \) \{\n        \/\/         change_text\.text\( ui\.value \)\;\n        \/\/     \}\,\n        \/\/     stop\: function\(\) \{\n        \/\/         \/\/preloader\(\)\;\n        \/\/     \}\n        \/\/ \}\)\;</find>
-      <find>&quot;#sidebar-slider&quot;</find>
       <find>loadMoreProducts</find>
       <find>SEARCH_OFFER</find>
       <find>exit</find>
       <find>twi</find>
-      <find>bannerVisibility</find>
       <find>detailsOpenStyle</find>
+      <find>bbil_amazon_settings</find>
+      <find>dropdown-toggle</find>
+      <find>bannerVisibility</find>
+      <find>categoriesError</find>
+      <find>storeDataViaAjax</find>
+      <find>categoriespaneldata</find>
+      <find>formValidation</find>
+      <find>discou</find>
+      <find>bbilas_loadMoreProducts</find>
+      <find>scroll</find>
+      <find>searchProduct</find>
+      <find>#cart_pop</find>
+      <find>showCartModal</find>
+      <find>addToCart</find>
+      <find>bbilas_showCartModal</find>
+      <find>addItemToCart</find>
+      <find>bbilas_increaseCartItems</find>
+      <find>class-amazon-api</find>
+      <find>bbilas_orderOnAmazon</find>
+      <find>orderOnAmazon</find>
+      <find>bbilas_save_theme</find>
+      <find>bbilas_save_sett</find>
+      <find>seletedTheme</find>
+      <find>fa fa-eye</find>
+      <find>images/icons/facebook.png</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,11 +108,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/class-amazon-store-admin.php" />
         <option value="$PROJECT_DIR$/admin/partials/setup.php" />
         <option value="$PROJECT_DIR$/includes/themeHelper.php" />
-        <option value="$PROJECT_DIR$/amazon-store.php" />
-        <option value="$PROJECT_DIR$/admin/partials/preference.php" />
         <option value="$PROJECT_DIR$/admin/js/amazon-store-admin.js" />
         <option value="$PROJECT_DIR$/includes/class-amazon-store.php" />
         <option value="$PROJECT_DIR$/includes/class-amazon-store-template.php" />
@@ -202,14 +126,34 @@
         <option value="$PROJECT_DIR$/public/themes/default/includes/header_search_form.php" />
         <option value="$PROJECT_DIR$/public/themes/default/includes/footer.php" />
         <option value="$PROJECT_DIR$/public/themes/default/includes/header.php" />
-        <option value="$PROJECT_DIR$/configurations.php" />
-        <option value="$PROJECT_DIR$/amazon/class-amazon-api.php" />
-        <option value="$PROJECT_DIR$/amazon/class-amazon-api-search.php" />
-        <option value="$PROJECT_DIR$/public/themes/default/search_products.php" />
-        <option value="$PROJECT_DIR$/public/themes/theme-1/search_products.php" />
         <option value="$PROJECT_DIR$/admin/css/amazon-store-admin.css" />
+        <option value="$PROJECT_DIR$/admin/class-amazon-store-admin.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/modal-details.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/modal-cart.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/header.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/js/custom.js" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/promo.php" />
+        <option value="$PROJECT_DIR$/admin/partials/preference.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/session.php" />
+        <option value="$PROJECT_DIR$/public/themes/default/search_products.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/search.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/search-results.php" />
+        <option value="$PROJECT_DIR$/includes/class-amazon-store-helper.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/cart.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/search-form.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/footer.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/cart-button.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/search_products.php" />
+        <option value="$PROJECT_DIR$/amazon/class-amazon_cart.php" />
+        <option value="$PROJECT_DIR$/amazon-store.php" />
+        <option value="$PROJECT_DIR$/amazon/class-amazon-api.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/cart-modal.php" />
         <option value="$PROJECT_DIR$/includes/class-amazon-ajax.php" />
         <option value="$PROJECT_DIR$/admin/partials/settings.php" />
+        <option value="$PROJECT_DIR$/configurations.php" />
+        <option value="$PROJECT_DIR$/amazon/class-amazon-api-search.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/includes/social.php" />
+        <option value="$PROJECT_DIR$/public/themes/theme-1/single_product.php" />
       </list>
     </option>
   </component>
@@ -243,13 +187,28 @@
             <path>
               <item name="amazon-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="amazon-store" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="amazon-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="amazon-store" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="amazon-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amazon-store" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme-1" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="amazon-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amazon-store" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme-1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -263,6 +222,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../vue" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\amazonstore\wp-content\plugins\amazon-store\amazon" />
+      <recent name="C:\xampp\htdocs\amazonstore\wp-content\plugins\amazon-store\public\themes\theme-1\includes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,12 +254,15 @@
       <workItem from="1534405584826" duration="12032000" />
       <workItem from="1534422867178" duration="1846000" />
       <workItem from="1534482564533" duration="1201000" />
-      <workItem from="1534483925070" duration="15044000" />
+      <workItem from="1534483925070" duration="17115000" />
+      <workItem from="1534568993029" duration="599000" />
+      <workItem from="1534570116938" duration="17611000" />
+      <workItem from="1534655694612" duration="4355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30123000" />
+    <option name="totallyTimeSpent" value="54759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -305,8 +273,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32913387" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19033675" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32913387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20717423" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
@@ -335,79 +303,12 @@
   <component name="WordPressConfiguration" doNotAskConfigAgain="true" enabled="true">
     <wordpressPath>C:\xampp\htdocs\amazonstore</wordpressPath>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/configurations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/amazon-store-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/default/includes/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/partials/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-amazon-store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="129" column="80" lean-forward="true" selection-start-line="129" selection-start-column="80" selection-end-line="129" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-amazon-store-activator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/theme-5/includes/navbar.php" />
-    <entry file="file://$PROJECT_DIR$/public/themes/theme-5/includes/landing_page.php" />
-    <entry file="file://$PROJECT_DIR$/includes/class-amazon-store-deactivator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-amazon-store-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="84" lean-forward="true" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configurations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/amazon-store-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/theme-5/search_products.php" />
     <entry file="file://$PROJECT_DIR$/admin/partials/settings.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -429,8 +330,10 @@
           <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
           <folding>
             <element signature="n#bbilas_setup#0;n#amazonAjax#0;n#!!top" />
-            <element signature="n#bbilas_save_theme#0;n#amazonAjax#0;n#!!top" />
             <element signature="n#bbilas_loadSubCategories#0;n#amazonAjax#0;n#!!top" />
+            <element signature="n#bbilas_loadMoreProducts#0;n#amazonAjax#0;n#!!top" />
+            <element signature="n#bbilas_searchProduct#0;n#amazonAjax#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -446,27 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-amazon-store-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="156" column="79" selection-start-line="156" selection-start-column="79" selection-end-line="156" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon-store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/partials/preference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="146" column="12" selection-start-line="146" selection-start-column="12" selection-end-line="151" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -531,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api-categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-amazon-store-deactivator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -560,9 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/search-form.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/default/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -570,127 +442,299 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/default/includes/404.php">
+    <entry file="file://$PROJECT_DIR$/admin/css/amazon-store-admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="549" column="24" selection-start-line="549" selection-start-column="24" selection-end-line="549" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-amazon-store-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="116" column="113" lean-forward="true" selection-start-line="116" selection-start-column="113" selection-end-line="116" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+          <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+          <caret line="107" column="6" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/modal-details.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api-search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
-          <folding>
-            <element signature="e#7#29#0#PHP" />
-            <element signature="n#__construct#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="n#setArgs#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#294#495#0#PHP" />
-            <element signature="e#499#780#0#PHP" />
-            <element signature="e#784#1268#0#PHP" />
-            <element signature="e#929#1268#0#PHP" />
-            <element signature="e#939#1222#0#PHP" />
-            <element signature="e#995#1222#0#PHP" />
-            <element signature="n#get_search_form#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="n#getProductsAttributes#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#377#1628#0#PHP" />
-            <element signature="e#425#1506#0#PHP" />
-            <element signature="e#1653#1720#0#PHP" />
-            <element signature="n#getProductArray#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="n#getProductHtml#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#2655#5289#0#PHP" />
-            <element signature="e#2748#5282#0#PHP" />
-            <element signature="n#getProducts#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#5560#5664#0#PHP" />
-            <element signature="n#render#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#5957#6320#0#PHP" />
-            <element signature="n#loadMoreProducts#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#6453#7110#0#PHP" />
-            <element signature="n#get_single_product#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#7190#7302#0#PHP" />
-            <element signature="n#getLoader#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="n#get_total_pages#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="n#get_current_page#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#7827#8022#0#PHP" />
-            <element signature="n#is_valid_request#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="n#getCategories#0;n#AmazonSearch#0;n#!!top" />
-            <element signature="e#8511#8529#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configurations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/default/search_products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/default/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/search_products.php">
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/promo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="482" column="29" lean-forward="true" selection-start-line="482" selection-start-column="29" selection-end-line="482" selection-end-column="29" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/css/amazon-store-admin.css">
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="549" column="24" selection-start-line="549" selection-start-column="24" selection-end-line="549" selection-end-column="24" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-amazon-store-helper.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="174" column="33" selection-start-line="174" selection-start-column="33" selection-end-line="174" selection-end-column="33" />
+          <folding>
+            <element signature="n#saveOnOptionTable#0;n#Helper#0;n#!!top" />
+            <element signature="n#getPostField#0;n#Helper#0;n#!!top" />
+            <element signature="n#redirectUri#0;n#Helper#0;n#!!top" />
+            <element signature="n#pluginLibUrl#0;n#Helper#0;n#!!top" />
+            <element signature="n#setDefatltPreferences#0;n#Helper#0;n#!!top" />
+            <element signature="n#resetPluginOptions#0;n#Helper#0;n#!!top" />
+            <element signature="n#rootCategories#0;n#Helper#0;n#!!top" />
+            <element signature="n#printRootCategoriesHtml#0;n#Helper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/search-results.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/cart-button.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/search-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/search-form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
+          <folding>
+            <element signature="e#7#45#0#PHP" />
+            <element signature="e#138#973#0#PHP" />
+            <element signature="e#976#1377#0#PHP" />
+            <element signature="e#1415#1783#0#PHP" />
+            <element signature="e#1847#2513#0#PHP" />
+            <element signature="n#__construct#0;n#Amazon#0;n#!!top" />
+            <element signature="n#sign#0;n#Amazon#0;n#!!top" />
+            <element signature="e#3045#3123#0#PHP" />
+            <element signature="e#3310#3843#0#PHP" />
+            <element signature="n#equestAPI#0;n#Amazon#0;n#!!top" />
+            <element signature="e#3962#4330#0#PHP" />
+            <element signature="n#http_build_query_rfc3986#0;n#Amazon#0;n#!!top" />
+            <element signature="n#request#0;n#Amazon#0;n#!!top" />
+            <element signature="e#4927#5136#0#PHP" />
+            <element signature="e#4947#5132#1#PHP" />
+            <element signature="e#5263#5351#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/search_products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="163" column="49" lean-forward="true" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api-categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api-cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon-store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="94" column="71" selection-start-line="94" selection-start-column="71" selection-end-line="94" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/cart-modal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="112" column="45" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
+          <folding>
+            <element signature="e#609#614#0#PHP" />
+            <element signature="e#740#997#0#HTML" />
+            <element signature="e#1639#1801#0#HTML" />
+            <element signature="e#1893#2529#0#HTML" />
+            <element signature="e#2050#2459#0#HTML" />
+            <element signature="e#2149#2445#0#HTML" />
+            <element signature="e#2463#2518#0#HTML" />
+            <element signature="e#2625#3300#0#HTML" />
+            <element signature="e#2782#3231#0#HTML" />
+            <element signature="e#2921#3217#0#HTML" />
+            <element signature="e#3235#3290#0#HTML" />
+            <element signature="e#3385#3445#0#HTML" />
+            <element signature="e#3501#4157#0#HTML" />
+            <element signature="e#3522#4145#0#HTML" />
+            <element signature="e#3578#3713#0#HTML" />
+            <element signature="e#3839#4082#0#HTML" />
+            <element signature="e#4753#5210#0#HTML" />
+            <element signature="e#4774#5198#0#HTML" />
+            <element signature="e#4830#4938#0#HTML" />
+            <element signature="e#5064#5135#0#HTML" />
+            <element signature="e#5272#5672#0#HTML" />
+            <element signature="e#5708#5992#0#HTML" />
+            <element signature="e#5806#5902#0#HTML" />
+            <element signature="e#6046#6410#0#HTML" />
+            <element signature="e#6475#6832#0#HTML" />
+            <element signature="e#6496#6820#0#HTML" />
+            <element signature="e#6686#6757#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/partials/preference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="147" column="52" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-amazon-ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="82" column="88" selection-start-line="82" selection-start-column="88" selection-end-line="82" selection-end-column="88" />
+        <state relative-caret-position="235">
+          <caret line="108" column="31" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="31" />
           <folding>
-            <element signature="n#__construct#0;n#amazonAjax#0;n#!!top" />
-            <element signature="e#841#899#0#PHP" />
-            <element signature="e#2309#2362#0#PHP" />
+            <element signature="n#bbilas_setup#0;n#amazonAjax#0;n#!!top" />
             <element signature="n#bbilas_loadSubCategories#0;n#amazonAjax#0;n#!!top" />
             <element signature="n#bbilas_loadMoreProducts#0;n#amazonAjax#0;n#!!top" />
+            <element signature="n#bbilas_searchProduct#0;n#amazonAjax#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/partials/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        <state relative-caret-position="337">
+          <caret line="87" column="112" selection-start-line="87" selection-start-column="107" selection-end-line="87" selection-end-column="112" />
           <folding>
-            <element signature="e#330#1646#0#PHP" />
-            <element signature="e#4432#4585#0#HTML" />
+            <element signature="e#277#289#0#PHP" expanded="true" />
+            <element signature="e#1108#2454#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/class-amazon-api-search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="143" column="56" selection-start-line="143" selection-start-column="56" selection-end-line="143" selection-end-column="56" />
+          <folding>
+            <element signature="e#7#29#0#PHP" />
+            <element signature="n#__construct#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#setArgsFromSession#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#333#534#0#PHP" />
+            <element signature="e#538#819#0#PHP" />
+            <element signature="e#823#1229#0#PHP" />
+            <element signature="e#968#1229#0#PHP" />
+            <element signature="e#978#1183#0#PHP" />
+            <element signature="e#1034#1183#0#PHP" />
+            <element signature="n#get_search_form#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#getProductsAttributes#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#1396#2647#0#PHP" />
+            <element signature="e#1444#2525#0#PHP" />
+            <element signature="e#2671#2738#0#PHP" />
+            <element signature="n#getProductArray#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#getProductHtmlOld#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#3677#6244#0#PHP" />
+            <element signature="e#3703#6237#0#PHP" />
+            <element signature="n#addToCartItemData#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#getProducts#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#8303#8407#0#PHP" />
+            <element signature="n#render#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#8564#8926#0#PHP" />
+            <element signature="n#loadMoreProducts#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#9058#9715#0#PHP" />
+            <element signature="n#get_single_product#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#9795#9907#0#PHP" />
+            <element signature="n#getLoader#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#get_total_pages#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#get_current_page#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#10430#10625#0#PHP" />
+            <element signature="n#is_valid_request#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="n#getCategories#0;n#AmazonSearch#0;n#!!top" />
+            <element signature="e#11112#11130#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/search_products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/includes/social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configurations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="47" column="76" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/theme-1/single_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>

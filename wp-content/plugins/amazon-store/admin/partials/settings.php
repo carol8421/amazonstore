@@ -151,7 +151,7 @@ if ($AllTemplates) {
 
             // submit via ajax
             var ajaxPost = {
-                action              : 'bbilas_save_theme',
+                action              : 'saveSettings',
                 theme               : theme,
                 detailsOpenStyle    : detailsOpenStyle,
                 bannerImage         : bannerImage,
